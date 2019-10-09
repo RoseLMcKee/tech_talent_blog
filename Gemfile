@@ -5,7 +5,6 @@ ruby '2.4.6'
 
 ########----10/9----###############
 
-gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 
@@ -51,6 +50,9 @@ group :development, :test do
 end
 
 group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
