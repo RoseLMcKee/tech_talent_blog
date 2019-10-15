@@ -16,7 +16,9 @@
         <td>
           <div class="panel panel-default"></div>
           <div class="panel-heading"> 
-             <%= post.title%> - <%= post.author%>
+             <div><%= post.title%> - </div>
+             <div><%= post.user.email %></div>
+             <div> - <%= post.user.username %></div>
                
              </div>
           <DIV class="panel-body">

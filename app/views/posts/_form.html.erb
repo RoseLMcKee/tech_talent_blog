@@ -25,6 +25,7 @@
     <%= form.label :blog_entry %>
     <%= form.text_area :blog_entry %>
   </div>
+  <%= form.hidden_field :user_id, value: current_user.id %>
 
   <div class="actions">
     <%= form.submit %>
