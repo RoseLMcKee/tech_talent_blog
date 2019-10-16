@@ -16,7 +16,7 @@
         <td>
           <div class="panel panel-default"></div>
           <div class="panel-heading"> 
-             <div><%= post.title%><em> <%= link_to post.username, user_posts_path(id: post.user_id) %> 
+             <div><%= post.title%><em> <%= link_to post.user.username, user_posts_path(name: post.user.username) %> 
              </em></div>
              
              <div><%= post.user.email %></div>

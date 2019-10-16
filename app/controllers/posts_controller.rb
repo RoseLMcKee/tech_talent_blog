@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def user_posts
-    @user = User.find(params[:id])
+    @user = User.find_by(username: params[:name])
     
   end
   def index
