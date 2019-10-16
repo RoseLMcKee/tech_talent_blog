@@ -17,6 +17,9 @@
 	<%= render 'comments/form', comment: @comment %>
 	<% @post.comments.each do |comment|%>
 	<p>
+		<strong><%= link_to comment.user.username, user_posts_path(id: comment.user_id) %> said...
+		</strong>
+	<p>
 		<%= comment.author %> said...<br/>
 		<%= comment.comment_entry %>
 	</p>
