@@ -8,7 +8,7 @@ ruby '2.4.6'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'devise'
-gem 'carrierwave', '~>1.0'
+gem 'carrierwave', '~>1.3'
 gem 'kaminari'
 
 ###################################
